@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  font-family: sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+ul {
+  display: flex;
+  margin-left: 50px;
+}
+.logo img {
+  height: 70px;
+  margin-left: 50px;
+}
+li {
+  color: white;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:nth-child(1) {
+  border-bottom: 3px solid #fc3836;
+  text-decoration: none;
+}
+a:nth-child(2) {
+  margin-left: 20px;
+}
+a:nth-child(3) {
+  margin-left: 20px;
+}
+
+.hero-section {
+  background-image: url("./images/spidermanheader.jpg");
+  height: 100vh;
+  background-size: contain;
+  background-position: right;
+  overflow: hidden;
+}
+.spiderman-title {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  margin-left: 200px;
+}
+.spiderman-title-img {
+  height: 250px;
+}
+.quem-somos {
+  background-image: url("./images/thor_header.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.quem-somos h2 {
+  color: white;
+  font-size: 30px;
+  padding-top: 60px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4px;
+}
+
+.quem-somos h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust this value to control the border length */
+  left: 50%; /* Position the border centered under the text */
+  transform: translateX(-50%); /* Center the border horizontally */
+  width: 80%; /* Adjust this value to control the border width */
+  border-bottom: 4px solid white;
+}
+
+.quem-somos-para {
+  width: 40%;
+  margin-right: 50px;
+  margin-left: auto;
+  color: white;
+  margin-top: 10rem;
+  font-size: 20px;
+}
+.catalogo-section {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalogo img {
+  height: 30rem;
+}
+.catalogo-section h2 {
+  color: black;
+  font-size: 30px;
+  width: fit-content;
+  position: relative;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+.catalogo-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust this value to control the border length */
+  left: 50%; /* Position the border centered under the text */
+  transform: translateX(-50%); /* Center the border horizontally */
+  width: 80%; /* Adjust this value to control the border width */
+  border-bottom: 6px solid #fe7467;
+}
+
+.catalogo-para {
+  width: 40%;
+  margin-right: 50px;
+  margin-left: auto;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  background-image: linear-gradient(#fe7467, #fc3836);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  width: fit-content;
+  margin-top: 20px;
+  border: none;
+}
+.my-button {
+  border-bottom: none !important;
+}
+@media screen and (max-width: 1080px) {
+  .hero-section {
+    background-image: url(./images/spidermanheader.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+  }
+  .spiderman-title {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo img {
+    margin-left: 10px;
+  }
+  ul {
+    margin-left: 10px;
+  }
+
+  .hero-section {
+    background-image: url("./images/spidermanheader.jpg");
+    height: 50vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: right;
+  }
+  .spiderman-title-img {
+    height: 100px;
+  }
+  .spiderman-title {
+    /* margin-left: 20px; */
+    align-items: start;
+    margin-top: 4rem;
+    justify-content: flex-start;
+  }
+  .catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .catalogo img {
+    height: 15rem;
+  }
+  .catalogo-para {
+    width: 90%;
+    margin: auto;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .quem-somos-para {
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .quem-somos h2 {
+    margin: 0;
+  }
+}
