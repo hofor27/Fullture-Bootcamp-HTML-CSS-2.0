@@ -40,7 +40,7 @@ a:nth-child(3) {
 .hero-section {
   background-image: url("./images/spidermanheader.jpg");
   height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
   overflow: hidden;
 }
@@ -169,16 +169,19 @@ button {
 
   .hero-section {
     background-image: url("./images/spidermanheader.jpg");
-    height: 50vh;
+    height: 40vh;
     background-size: cover;
     overflow: hidden;
-    background-position: right;
+
+    background-position: 0 41px;
+    background-color: black;
+    background-repeat: no-repeat;
   }
   .spiderman-title-img {
     height: 100px;
   }
   .spiderman-title {
-    /* margin-left: 20px; */
+    margin-left: 20px;
     align-items: start;
     margin-top: 4rem;
     justify-content: flex-start;
@@ -189,9 +192,11 @@ button {
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
+    flex-direction: column-reverse;
   }
   .catalogo img {
     height: 15rem;
+    margin-top: 50px;
   }
   .catalogo-para {
     width: 90%;
@@ -200,14 +205,18 @@ button {
     font-size: 20px;
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
     text-align: center;
   }
   .quem-somos {
     display: flex;
     flex-direction: column;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    background-image: none;
+    background-color: #fc3836;
   }
   .quem-somos-para {
     margin: 20px;
